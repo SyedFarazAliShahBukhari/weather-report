@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Weather-Picture.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.9) 0%, rgba(70, 130, 180, 0.9) 100%);
+    backdrop-filter: blur(5px);
+}
+
+form input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    background: rgba(210, 38, 87, 0.9);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus {
+    background: rgba(210, 38, 87, 1);
+    transform: scale(1.02);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 248, 220, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table tr:first-child {
+    background: rgba(222, 184, 135, 0.7);
+}
+
+table tr:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table td {
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.current-temp {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.weather-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 12px;
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.forecast-day p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
