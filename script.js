@@ -2,7 +2,7 @@ let table = document.getElementById("table")
 let form = document.getElementById("form")
 
 let fetchCountry = async(name) =>{
-    let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=ab96b1a5bed044d5920135013252105&q= ${name} &aqi=no`)
+    let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=ab96b1a5bed044d5920135013252105&q=${name}&aqi=no`)
     let res = await response.json()
     return res
 };
